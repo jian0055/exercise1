@@ -1,0 +1,74 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.btn {
+	background-color: #B00000;
+	display: inline-block;
+  	border-radius: 4px;
+  	border: none;
+  	color: ;
+  	text-align: center;
+  	font-size: 28px;
+  	padding: 20px;
+  	width: 15em;
+  	transition: all 0.5s;
+  	cursor: pointer;
+ 	margin: 5px;
+ }
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+	background-color: #ff3333;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -3em;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 1em;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.icon-logo {
+	text-align: center;
+	font-size: 5em;
+
+}
+
+h1 {
+	font-family: "Impact", Charcoal, sans-serif;
+}
